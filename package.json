@@ -1,41 +1,78 @@
 {
+  "_from": "node-red-contrib-salesforce",
+  "_id": "node-red-contrib-salesforce@0.2.2",
+  "_inBundle": false,
+  "_integrity": "sha512-ZqQlhOlSg9jFLih+bnPwOJqh3vbbuqAn1Kgy08M3m7ktt6VtZY14wh3vEIVix9a/wsM/sSnDiwlQdo5A6sCQSQ==",
+  "_location": "/node-red-contrib-salesforce",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "node-red-contrib-salesforce",
     "name": "node-red-contrib-salesforce",
-    "version": "0.2.2",
-    "description": "A set of Node-RED nodes to interact with Salesforce and Force.com.",
-    "author": {
-        "name": "Jeff Douglas",
-        "url": "http://blog.jeffdouglas.com"
-    },
-    "contributors": [{
-        "name": "Stephan H. Wissel",
-        "url": "https://wissel.net",
-        "email": "stephan@wissel.net"
-    }],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Stwissel/node-red-contrib-salesforce"
-    },
-    "keywords": ["node-red", "salesforce", "forcedotcom", "Heroku"],
-    "node-red": {
-        "nodes": {
-            "soql": "soql.js",
-            "sosl": "sosl.js",
-            "dml": "dml.js",
-            "streaming": "streaming.js",
-            "obm": "obm.js",
-            "connection-config": "connection-config.js"
-        }
-    },
-    "license": "MIT",
-    "dependencies": {
-        "lodash": "^4.17.5",
-        "nforce": "git+https://git@github.com/stwissel/nforce",
-        "xml2js": "^0.4.19"
-    },
-    "scripts": {
-        "test": "echo \"Shame: no test specified\" && exit 0"
-    },
-    "publishConfig": {
-        "access": "public"
+    "escapedName": "node-red-contrib-salesforce",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/node-red-contrib-salesforce/-/node-red-contrib-salesforce-0.2.2.tgz",
+  "_shasum": "99659684a06d4ff6796efb01efc9fcdc6fec47d4",
+  "_spec": "node-red-contrib-salesforce",
+  "_where": "/home/ubuntu/.node-red",
+  "author": {
+    "name": "Jeff Douglas",
+    "url": "http://blog.jeffdouglas.com"
+  },
+  "bugs": {
+    "url": "https://github.com/Stwissel/node-red-contrib-salesforce/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Stephan H. Wissel",
+      "email": "stephan@wissel.net",
+      "url": "https://wissel.net"
     }
+  ],
+  "dependencies": {
+    "lodash": "^4.17.5",
+    "nforce": "git+https://git@github.com/stwissel/nforce.git",
+    "xml2js": "^0.4.19"
+  },
+  "deprecated": false,
+  "description": "A set of Node-RED nodes to interact with Salesforce and Force.com.",
+  "homepage": "https://github.com/Stwissel/node-red-contrib-salesforce#readme",
+  "keywords": [
+    "node-red",
+    "salesforce",
+    "forcedotcom",
+    "Heroku"
+  ],
+  "license": "MIT",
+  "name": "node-red-contrib-salesforce",
+  "node-red": {
+    "nodes": {
+      "soql": "soql.js",
+      "sosl": "sosl.js",
+      "dml": "dml.js",
+      "streaming": "streaming.js",
+      "obm": "obm.js",
+      "connection-config": "connection-config.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stwissel/node-red-contrib-salesforce.git"
+  },
+  "scripts": {
+    "test": "echo \"Shame: no test specified\" && exit 0"
+  },
+  "version": "0.2.2"
 }

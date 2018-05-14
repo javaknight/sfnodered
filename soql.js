@@ -5,6 +5,10 @@ module.exports = function(RED) {
         RED.nodes.createNode(this, config);
         this.connection = RED.nodes.getNode(config.connection);
         const node = this;
+        // create connection object
+        const org = nforce.createConnection(this.connection);
+        org.authenticate({ username: this.connection.username, password: this.connection.password, autoRefresh: true });
+
         this.on('input', function(msg) {
             // show initial status of progress
             node.status({ fill: 'green', shape: 'ring', text: 'connecting....' });
@@ -42,7 +46,6 @@ module.exports = function(RED) {
 
             // auth and run query
             org
-                .authenticate({ username: this.connection.username, password: this.connection.password })
                 .then(function() {
                     return org.query({ fetchAll: config.fetchAll, query: query });
                 })
